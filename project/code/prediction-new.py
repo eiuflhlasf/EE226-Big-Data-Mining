@@ -255,7 +255,10 @@ with open('submit.csv','w') as csvfile1:
     k=0
     for item in link_prediction:
         csvfile1.write(str(k)+","+str(item)+"\n")
+        if (k==10535):
+            break
         k=k+1
+
 
 
 
